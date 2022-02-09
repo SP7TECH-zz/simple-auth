@@ -7,7 +7,10 @@ const homeRoutes = require("./routes/homeRoutes");
 
 const app = express();
 
-// mongoose.connect("")
+mongoose.connect("mongodb+srv://simpleAuth:simpleAuth@cluster0.ueiyz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+});
 
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
@@ -19,4 +22,4 @@ app.use(homeRoutes);
 
 app.listen(3000 || process.env.PORT, () => {
     console.log("Server started");
-})
+});

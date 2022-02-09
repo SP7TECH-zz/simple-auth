@@ -1,0 +1,17 @@
+<%- include("partials/head") %>
+<%- include("partials/header") %>
+
+<div class="container">
+    <div class="row">
+        <form action="/signup" method="POST">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name"><br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email"><br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password"><br>
+            <button class="btn btn-primary" type="submit">Sign Up</button>
+        </form>
+    </div>
+</div>
+<%- include("partials/end") %>
