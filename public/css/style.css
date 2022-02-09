@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  padding: 15px 40px;
+}
+
+header nav ul li:first-child {
+  margin-right: 30px;
+}
+
+.btn {
+  font-size: 1.6rem;
+}
